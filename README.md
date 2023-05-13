@@ -90,4 +90,13 @@ Edit file /etc/zabbix/zabbix_server.conf
  `systemctl restart zabbix-server zabbix-agent apache2`
  
  `systemctl enable zabbix-server zabbix-agent apache2`
+ 
+ 
+ - f. Open Zabbix UI web page
+ 
+	The default URL for Zabbix UI when using Apache web server is http://host/zabbix
+
+
+To start using Zabbix UI dashboard read [the documentation](https://www.zabbix.com/documentation/6.4/manual/quickstart/login)
+ 
 
