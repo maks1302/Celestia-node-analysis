@@ -1,3 +1,4 @@
+
 # Performing hardware analysis of a server with running Celestia Light node
 
 ## Intro
@@ -97,7 +98,12 @@ For installing the node, read [Celestia Docs](https://docs.celestia.org/nodes/li
  
 	The default URL for Zabbix UI when using Apache web server is http://host/zabbix
 
+The installation has been compleated!
 
-To start using Zabbix UI dashboard read [the documentation](https://www.zabbix.com/documentation/6.4/manual/quickstart/login)
+To start using Zabbix UI dashboard, read [the documentation](https://www.zabbix.com/documentation/6.4/manual/quickstart/login)
  
+ ## Analyzing the hardware performance 
+ ### Notion
+ It's important to understand that the idea of analyzing server performance does not mean analyzing performance of the node itself. The node is running on **Ubuntu 22.04** with the hardware mentioning above.
+ Considering this, some other Ubuntu processes may affect the server performance, which has no relation to Celestia Light node. Understanding this, you may have different node performance, depending on what additional processes you have running on your server. 
 
