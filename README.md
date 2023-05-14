@@ -29,8 +29,8 @@ The server we chose meets the requirements for Celestia Light node and can be us
 For installing the node, read [Celestia Docs](https://docs.celestia.org/nodes/light-node/)
 
 ### Analysis methods and technics
- For monitoring and analyzing hardware performance of our server, we will be using standard linux commands along with open-source software tool for monitoring [Zabbix](https://www.zabbix.com/).
-
+ For monitoring and analyzing hardware performance of our server, we will be using standard linux commands along with _push_ open-source software tool for monitoring [Zabbix](https://www.zabbix.com/).
+ > The difference on pull/push metrics approaches you can read in [the article](https://www.alibabacloud.com/blog/pull-or-push-how-to-select-monitoring-systems_599007)
 ### Zabbix Installation
 
  - a. Install Zabbix repository.
