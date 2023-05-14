@@ -151,7 +151,7 @@ Monitoring a disk of a server is crucial for several reasons:
   
 The node installed on the server is syncing the blocks since day 1 of the Blockspace Race (since the end of March). Current (as of 14th May) block height is `483855`. The disk space usage is `21.59 GB. Celestia Light node itself has taken a bit over than `13 GB` of the used space. See the graph below.
 
-![The disk usage](https://i.imgur.com/P3VrpXP.png)
+![The disk usage](https://i.imgur.com/lq07IKo.png)
 
 Also, essential to note that the space increasing over time since more block synced along with critical system and software updates.  On the graph below, server increase usage of space over 24 hours period.
 
