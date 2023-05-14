@@ -2,6 +2,7 @@
 
 ## Intro
 Monitoring and analyzing a server health is always crucial for smooth and seamless functionality, identifying issues before they cause significant downtime or data loss. Regular analyzing can help detect and resolve issues quickly, prevent potential security breaches, and optimize the server's performance, ensuring it meets the desired optimal functionality. 
+
 In this article, we will be analyzing performance for Celestia Light node, running on a VPS server. It potentially can help us to understand the node's real use requirements, network bandwidth needed, other server's metrics, optimal way to maintain high node uptime, and resolve any compatibility issues if detected.
 
 ## Preparation
@@ -66,30 +67,30 @@ For installing the node, read [Celestia Docs](https://docs.celestia.org/nodes/li
     
     `quit;`
 
-On Zabbix server host import initial schema and data. You will be prompted to enter your newly created password.
+	On Zabbix server host import initial schema and data. You will be prompted to enter your newly created password.
 
-  `zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix`
-  
-Disable log_bin_trust_function_creators option after importing database schema.
+	  `zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix`
 
-   `mysql`
-   
-   `set global log_bin_trust_function_creators = 0;`
-   
-   `quit;`
+	Disable log_bin_trust_function_creators option after importing database schema.
+
+	   `mysql`
+
+	   `set global log_bin_trust_function_creators = 0;`
+
+	   `quit;`
 
  - d. Configure the database for Zabbix server
 
-Edit file /etc/zabbix/zabbix_server.conf
+	Edit file /etc/zabbix/zabbix_server.conf
 
-`DBPassword=password`
+	`DBPassword=password`
 
  - e. Start Zabbix server and agent processes
- Start Zabbix server and agent processes and make it start at system boot.
- 
- `systemctl restart zabbix-server zabbix-agent apache2`
- 
- `systemctl enable zabbix-server zabbix-agent apache2`
+	 Start Zabbix server and agent processes and make it start at system boot.
+
+	 `systemctl restart zabbix-server zabbix-agent apache2`
+
+	 `systemctl enable zabbix-server zabbix-agent apache2`
  
  
  - f. Open Zabbix UI web page
