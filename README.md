@@ -128,6 +128,13 @@ Also, from the graph we see the area of higher CPU usage, but we may not count t
 
 Apart from that, during Celestia Light node upgrades, the CPU usage may increase to up to `100%`. But as long as an update is completed, the CPU usage comes down to average `13-14%`. 
 
+Context switches per second are also in the normal range, smooth and has no spikes, which indicates normal spending time of switching between different processes. 
+![Context swithses](https://i.imgur.com/mUOfKpl.png)
+
+Interrupts per second data (look the graph below) indicates that the average is 2k interrupts per second, which tells us that CPU is not being interrupted frequently, and the node does not cause any spikes or overloading of the system performance.
+![interrupts per second](https://i.imgur.com/51GTKf1.png)
+
+
 Based on the performance analysis conducted, we can conclude that the CPU resources available on the server are sufficient to maintain a Celestia Light node in a stable condition.
 
 
