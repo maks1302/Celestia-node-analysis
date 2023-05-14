@@ -107,6 +107,29 @@ To start using Zabbix UI dashboard, follow [the documentation](https://www.zabbi
  It's important to understand that the idea of analyzing server performance does not mean analyzing performance of the node itself. The node is running on **Ubuntu 22.04** with the hardware mentioning [above](https://github.com/maks1302/Celestia-node-analysis/blob/main/README.md#server).
  Considering this, some other Ubuntu processes may affect the server performance, which has no relation to Celestia Light node. Understanding this, you may have different node performance, depending on what additional processes you have running on your server. 
  
+ 
+ ### CPU usage
+
+Monitoring and analyzing a server's CPU (Central Processing Unit) performance is essential for several reasons:
+
+1.  Identifying performance issues: The CPU is the heart of the computer system, and its performance directly affects the performance of the entire system. Monitoring CPU performance can help identify any issues such as high CPU utilization, which can lead to slower response times, reduced throughput, and even system crashes.
+    
+2.  Optimizing resource utilization: Analyzing CPU performance can help identify inefficient or poorly optimized code or processes that consume excessive CPU resources. By optimizing resource utilization, system administrators can improve overall system performance and reduce costs associated with underutilized hardware.
+       
+3.  Troubleshooting: Analyzing CPU performance can help pinpoint the source of performance issues and identify any bottlenecks or resource constraints that may be causing problems.
+   
+
+In summary, monitoring and analyzing a server's CPU performance is essential for maintaining the node high uptime, optimizing resource utilization, and ensuring optimal performance of our node. It can help identify potential issues, predict future resource needs, and troubleshoot performance problems.
+
+Monitoring and analyzing the server performance, it's noticeable (see the graph below) that the CPU usage is very moderate, and the running node does not consume much of CPU resources and keeps usage at average of `13.6%.`
+
+![CPU usage](https://i.imgur.com/gpyHeeB.png)
+Also, from the graph we see the area of higher CPU usage, but we may not count that as Celestia Light node loads the server but rather like increasing CPU usage due to user interaction with the server.
+
+Apart from that, during Celestia Light node upgrades, the CPU usage may increase to up to `100%`. But as long as an update is completed, the CPU usage comes down to average `13-14%`. 
+
+Based on the performance analysis conducted, we can conclude that the CPU resources available on the server are sufficient to maintain a Celestia Light node in a stable condition.
+
 
 ### Disk usage
 Monitoring a disk of a server is crucial for several reasons:
@@ -136,7 +159,7 @@ The disk utilization keeps being low, which indicates that the node does not exp
 
 Efficient system performance and stability are critical for optimal computer operation. To achieve this, I maintain a consistent monitoring of the RAM usage, enabling me to detect any potential issues promptly. With this proactive approach, I can take necessary measures to optimize the system's performance and stability, reducing the risk of negative impacts.
 
-Memory usage of the server is very stable and take around `64 %` of the server's memory, which is around `2.5 GB`. No high memory triggers were detected.
+Memory usage of the server is very stable and take around `64%` of the server's memory, which is around `2.5 GB`. No high memory triggers were detected.
 ![memory usage](https://i.imgur.com/61oEYnu.png)
 
 With around `1.5 GB` of free RAM, I can confidently keep using the server with no need to add/increasing memory swap. Analyzing the RAM data I have, I can make a conclusion that `4 GB` of RAM is enough to keep Celestia Light node running in a good condition.
