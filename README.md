@@ -106,4 +106,16 @@ To start using Zabbix UI dashboard, read [the documentation](https://www.zabbix.
  ### Notion
  It's important to understand that the idea of analyzing server performance does not mean analyzing performance of the node itself. The node is running on **Ubuntu 22.04** with the hardware mentioning [above](https://github.com/maks1302/Celestia-node-analysis/blob/main/README.md#server).
  Considering this, some other Ubuntu processes may affect the server performance, which has no relation to Celestia Light node. Understanding this, you may have different node performance, depending on what additional processes you have running on your server. 
+ 
 
+### Disk usage
+The node is syncing the blocks since day 1 of the Blockspace Race (since the end of March).
+Current (as of 14th May) block height is `483855`. The disk space usage is `21.59 GB. Celestia Light node itself has taken a bit over than `13 GB` of the used space. See the graph below.
+
+![The disk usage](https://i.imgur.com/4hssKKc.png)
+
+Also, essential to note that the space increasing over time since more block synced along with critical system and software updates.  On the graph below, server increase usage of space over 24 hours period.
+
+![Space increases over 24 hours](https://i.imgur.com/eN1ORZs.png)
+
+Taking the situation into account, we can see that, the official hardware requirements for the node is quite enough to keep the node running. But considering potential Celestia Light node updates, more block synced over time, along with Ubuntu updates, I think it's better to use a server with more space.
