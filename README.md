@@ -170,3 +170,13 @@ Memory usage of the server is very stable and take around `64%` of the server's 
 ![memory usage](https://i.imgur.com/61oEYnu.png)
 
 With around `1.5 GB` of free RAM, I can confidently keep using the server with no need to add/increasing memory swap. Analyzing the RAM data I have, I can make a conclusion that `4 GB` of RAM is enough to keep Celestia Light node running in a good condition.
+
+
+### Bandwitch usage
+
+Monitoring and analyzing server bandwidth is important to ensure reliable server performance, consistent user experience, and network security. Good and stable bandwitch performance is essential to keep high Uptime of a node.
+
+To conduct 
+
+    sudo apt install speedtest-cli
+    speedtest-cli --secure
