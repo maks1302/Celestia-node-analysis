@@ -20,7 +20,7 @@ Server hardware analysis for Celestia Light node will be run on a ***VPS CX21***
 > -   Memory: **4 GB RAM**
 > -   CPU: **Intel Dual Core**
 > -   Disk: **40 GB SSD Storage**
-> -   Bandwidth: **3 Gbps for Download/3 Gbps for Upload**
+> -   Bandwidth: **3.2 Gbps for Download/2.8 Gbps for Upload**
 >  -   Operating system: **Ubuntu 22.04**
 
 The server we chose meets the requirements for Celestia Light node and can be used for running the node.
@@ -172,11 +172,33 @@ Memory usage of the server is very stable and take around `64%` of the server's 
 With around `1.5 GB` of free RAM, I can confidently keep using the server with no need to add/increasing memory swap. Analyzing the RAM data I have, I can make a conclusion that `4 GB` of RAM is enough to keep Celestia Light node running in a good condition.
 
 
+
 ### Bandwitch usage
 
 Monitoring and analyzing server bandwidth is important to ensure reliable server performance, consistent user experience, and network security. Good and stable bandwitch performance is essential to keep high Uptime of a node.
 
-To conduct 
+To start analyzing the network speed, we need to install an additional package and see if the network bandwitch meets the requirements.
 
     sudo apt install speedtest-cli
-    speedtest-cli --secure
+    
+To conduct a test, we use the next command:
+
+       speedtest-cli --secure
+
+The network bandwitch may vary. For the server network, the speed is `3200 Mbit/s` for downloading and `2800 Mbit/s` for uploading. Which is more than enough for the node needs.
+
+The network traffic can be seen from the following graph 
+
+![Network](https://i.imgur.com/HKpMM5q.png)
+We can pay attention to the traffic downgrade which happened on around 10th May. A reason why this happened is the upgrade of the node to `v0.9.4`. From the analysis, we can clearly see that all the previous versions of the node consumed more in and out traffic, but the consumption is lowered since the new version update.  
+
+## Conclusion
+
+In summary, we performed a server hardware analysis on a system with running Celestia Light node, examining its CPU, disk, memory, and bandwidth usage. We examined all key metrics and have concluded that the node is functioning correctly on the server, with a high uptime, no overload issues, and sufficient performance potential to accommodate potential upgrades or updates without the risk of disruption.
+
+
+
+### Outro
+The node analyis was conducted by `dmaxiam#0744`
+The Blockspace Race wallet: `12D3KooWBHGXPLQwJn9SBmxy9AeQAzZNcJQsocAyQ5toH6P1Fznm`
+
