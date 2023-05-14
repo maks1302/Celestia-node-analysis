@@ -200,5 +200,6 @@ In summary, we performed a server hardware analysis on a system with running Cel
 
 ### Outro
 The node analyis was conducted by `dmaxiam#0744`
+
 The Blockspace Race wallet: `12D3KooWBHGXPLQwJn9SBmxy9AeQAzZNcJQsocAyQ5toH6P1Fznm`
 
