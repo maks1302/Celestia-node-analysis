@@ -99,8 +99,8 @@ For installing the node, read [Celestia Docs](https://docs.celestia.org/nodes/li
 	The default URL for Zabbix UI when using Apache web server is http://host/zabbix
 
 The installation has been compleated!
-
-To start using Zabbix UI dashboard, read [the documentation](https://www.zabbix.com/documentation/6.4/manual/quickstart/login)
+The analysys data and graphs will be taken from Zabbix UI dashboard.
+To start using Zabbix UI dashboard, follow [the documentation](https://www.zabbix.com/documentation/6.4/manual/quickstart/login)
  
  ## Analyzing the hardware performance 
  ### Notion
@@ -109,8 +109,17 @@ To start using Zabbix UI dashboard, read [the documentation](https://www.zabbix.
  
 
 ### Disk usage
-The node is syncing the blocks since day 1 of the Blockspace Race (since the end of March).
-Current (as of 14th May) block height is `483855`. The disk space usage is `21.59 GB. Celestia Light node itself has taken a bit over than `13 GB` of the used space. See the graph below.
+Monitoring a disk of a server is crucial for several reasons:
+
+1.  Early detection of potential failures: SSDs have a limited lifespan and can fail unexpectedly. Monitoring their health and performance can help detect any early signs of failure, allowing for timely replacement and preventing data loss.
+    
+2.  Preventing data loss: If an SSD fails, data stored on it may be lost permanently. By monitoring the SSD, I can take measures to ensure data backup and disaster recovery plans are in place to minimize the risk of data loss.
+    
+3.  Optimizing performance: Monitoring the SSD can help identify any performance issues, such as slow read/write speeds or high disk utilization, and take necessary measures to optimize the system's performance.
+    
+4.  Planning for upgrades: Monitoring the SSD can help identify when an upgrade or replacement is necessary. This can help plan for future hardware upgrades and budgeting.
+  
+The node installed on the server is syncing the blocks since day 1 of the Blockspace Race (since the end of March). Current (as of 14th May) block height is `483855`. The disk space usage is `21.59 GB. Celestia Light node itself has taken a bit over than `13 GB` of the used space. See the graph below.
 
 ![The disk usage](https://i.imgur.com/4hssKKc.png)
 
@@ -118,4 +127,16 @@ Also, essential to note that the space increasing over time since more block syn
 
 ![Space increases over 24 hours](https://i.imgur.com/eN1ORZs.png)
 
-Taking the situation into account, we can see that, the official hardware requirements for the node is quite enough to keep the node running. But considering potential Celestia Light node updates, more block synced over time, along with Ubuntu updates, I think it's better to use a server with more space.
+Taking the situation into account, we can see that, the official hardware requirements for the node is quite enough to keep the node running. But considering potential Celestia Light node updates/upgrades, more blocks synced over time, along with Ubuntu updates, I think it's better to use a server with more space.
+
+The disk utilization keeps being low, which indicates that the node does not expose disk much.
+![disk utilization](https://i.imgur.com/K4YdRVW.png)
+
+### Memory usage
+
+Efficient system performance and stability are critical for optimal computer operation. To achieve this, I maintain a consistent monitoring of the RAM usage, enabling me to detect any potential issues promptly. With this proactive approach, I can take necessary measures to optimize the system's performance and stability, reducing the risk of negative impacts.
+
+Memory usage of the server is very stable and take around `64 %` of the server's memory, which is around `2.5 GB`. No high memory triggers were detected.
+![memory usage](https://i.imgur.com/61oEYnu.png)
+
+With around `1.5 GB` of free RAM, I can confidently keep using the server with no need to add/increasing memory swap. Analyzing the RAM data I have, I can make a conclusion that `4 GB` of RAM is enough to keep Celestia Light node running in a good condition.
