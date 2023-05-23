@@ -202,6 +202,8 @@ In summary, we performed a server hardware analysis on a system with running Cel
 The node analysis was conducted by `dmaxiam#0744`
 
 Light Node ID: `12D3KooWBHGXPLQwJn9SBmxy9AeQAzZNcJQsocAyQ5toH6P1Fznm`
+
 The Blockspace Race Celestia wallet: `celestia1jawy8zvxcuaaruv7s9nhltgukujfy6puyz770f`
+
 Celestia mainnet reward wallet: `celestia1f2e236xfm82sylhsjdd2ec8l3vurdkevltpfx6`
 
