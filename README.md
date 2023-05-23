@@ -105,7 +105,7 @@ To start using Zabbix UI dashboard, follow [the documentation](https://www.zabbi
  ## Analyzing the hardware performance 
  ### Notion
  It's important to understand that the idea of analyzing server performance does not mean analyzing performance of the node itself. The node is running on **Ubuntu 22.04** with the hardware mentioning [above](https://github.com/maks1302/Celestia-node-analysis/blob/main/README.md#server).
- Considering this, some other Ubuntu processes may affect the server performance, which has no relation to Celestia Light node. Understanding this, you may have different node performance, depending on what additional processes you have running on your server. 
+ Considering this, some other Ubuntu processes may affect the server performance, which has no relation to Celestia Light node. Understanding this, you may have different node performance, depending on what additional processes you have running on your server. No other nodes or programs are installed on the server!
  
  
  ### CPU usage
@@ -201,5 +201,7 @@ In summary, we performed a server hardware analysis on a system with running Cel
 ### Outro
 The node analysis was conducted by `dmaxiam#0744`
 
-The Blockspace Race wallet: `12D3KooWBHGXPLQwJn9SBmxy9AeQAzZNcJQsocAyQ5toH6P1Fznm`
+Light Node ID: `12D3KooWBHGXPLQwJn9SBmxy9AeQAzZNcJQsocAyQ5toH6P1Fznm`
+The Blockspace Race Celestia wallet: `celestia1jawy8zvxcuaaruv7s9nhltgukujfy6puyz770f`
+Celestia mainnet reward wallet: `celestia1f2e236xfm82sylhsjdd2ec8l3vurdkevltpfx6`
 
